@@ -35,9 +35,9 @@ setup_homebrew() {
 
 setup_softwares() {
   echo "Installing softwares..."
-  cat $PWD/brew_tap | xargs -L 1 brew tap
-  cat $PWD/brew_list | xargs -L 1 brew install
-  cat $PWD/brew_cask_list | xargs -L 1 brew cask install
+  cat $PWD/brew/brew_tap | xargs -L 1 brew tap
+  cat $PWD/brew/brew_list | xargs -L 1 brew install
+  cat $PWD/brew/brew_cask_list | xargs -L 1 brew cask install
 
   brew cask cleanup
   brew cleanup
