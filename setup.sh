@@ -64,11 +64,21 @@ setup_vim() {
 setup_zsh() {
   echo 'Installig Oh-My-Zsh...'
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  
+
   echo 'Installig powerlevel10 theme...'
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
   chsh -s /bin/zsh # need to enter password
+}
+
+setup_pyenv() {
+  echo 'Installing python 3...'
+  pyenv install 3.8.3
+
+  echo 'Installing python 2...'
+  pyenv install 2.7.17
+
+  pyenv global 3.8.3 2.7.17
 }
 
 setup() {
@@ -79,6 +89,7 @@ setup() {
   setup_git
   setup_vim
   setup_zsh
+  setup_pyenv
 
   echo '✨Setup is done, enjoy ✨'
 }

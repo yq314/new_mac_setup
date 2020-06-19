@@ -66,17 +66,17 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  docker osx python thefuck gradle
+  docker osx python thefuck gradle pyenv command-not-found kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 export NVM_DIR="$HOME/.nvm"[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -107,8 +107,6 @@ export LANG=en_GB.UTF-8
 
 alias python="python3"
 alias pip="pip3"
-
-eval "$(pyenv init -)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
