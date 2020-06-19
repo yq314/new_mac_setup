@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "##########################################"
-echo "#     👨‍💻SAY HELLO TO YOUR NEW MAC 👨‍💻     #"
+echo "#     👨‍💻 SAY HELLO TO YOUR NEW MAC 👨‍💻     #"
 echo "##########################################"
 
 read -p "Your name: " name
@@ -91,7 +91,7 @@ setup() {
   setup_zsh
   setup_pyenv
 
-  echo '✨Setup is done, enjoy ✨'
+  echo '✨ Setup is done, enjoy ✨'
 }
 
 setup
