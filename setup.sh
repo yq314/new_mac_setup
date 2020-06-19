@@ -46,6 +46,7 @@ setup_softwares() {
 setup_dotfiles() {
   echo "Setting up dot files..."
   cp $PWD/dot_files/* ~/
+  source ~/.zshrc
 }
 
 setup_git() {
@@ -89,6 +90,7 @@ setup() {
   setup_git
   setup_vim
   setup_zsh
+  setup_dotfiles
   setup_pyenv
 
   echo '✨ Setup is done, enjoy ✨'
