@@ -1,5 +1,6 @@
 awscli
 curl
+derailed/k9s/k9s
 git
 gradle
 jq
