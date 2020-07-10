@@ -82,6 +82,12 @@ setup_pyenv() {
   pyenv global 3.8.3 2.7.17
 }
 
+setup_mac() {
+  echo 'Configuring Mac Settings...'
+  ./mac_config.sh
+  killall Finder
+}
+
 setup() {
   setup_ssh
   setup_xcode
