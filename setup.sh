@@ -16,7 +16,8 @@ setup_ssh() {
     echo "Found ssh keys, setting up .ssh folder..."
     mkdir -p ~/.ssh
     cp $PWD/keys/id_rsa* ~/.ssh/
-    chmod 644 ~/.ssh/id_rsa*
+    chmod 644 ~/.ssh/id_rsa.pub
+    chmod 600 ~/.ssh/id_rsa
     chmod 700 ~/.ssh
   fi
 }
