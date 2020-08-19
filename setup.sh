@@ -45,7 +45,7 @@ setup_softwares() {
 
 setup_dotfiles() {
   echo "Setting up dot files..."
-  cp $PWD/dot_files/* ~/
+  cp $PWD/dot_files/. ~/
   source ~/.zshrc
 }
 
