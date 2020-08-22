@@ -6,7 +6,6 @@ gradle
 jq
 kubectl
 mitmproxy
-ntfs-3g
 nvm
 pyenv
 pyenv-virtualenv
