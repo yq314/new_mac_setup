@@ -1,12 +1,16 @@
 awscli
 curl
 derailed/k9s/k9s
+fzf
 git
 gradle
+helm
 jq
 kubectl
+minikube
 mitmproxy
 nvm
+oath-toolkit
 pyenv
 pyenv-virtualenv
 python
